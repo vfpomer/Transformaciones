@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyframes - transform</title>
+   <!-- <link rel="stylesheet" type="text/css" href="css/css1.css">-->
+    <style type="text/css">
+        .cuadrado{
+            width: 50px;
+            height: 50px;
+            background-color: aquamarine;
+            animation:1.5s infinite rodar;
+        }
+
+        @keyframes rodar{
+            100%{transform:rotate(360deg);}
+        }
+
+        .rectangulo {
+            background: blue;      
+            border: 3px solid #000; 
+            width: 75px;          
+            height: 50px;
+            position:relative;  
+            animation:1.5s infinite desplazar; 
+            margin-top:10px;   
+        }
+
+        @keyframes desplazar{
+            0%   {background-color:red; left:0px; top:0px;}
+            100%  {background-color:red; left:500px; top:0px;}
+        }
+
+        .color {
+            width: 50px;
+            height: 50px;
+            margin-top:10px;   
+            animation-name: color;
+            animation-duration: 5s;
+            animation-iteration-count: 10;
+        }
+
+        @keyframes color {
+            from {background-color: orange;}
+            to {background-color: rgb(132, 0, 255);}
+        }
+
+        .colores{
+            width: 50px;
+            height: 50px;
+            margin-top:10px;  
+            animation-name: colorines;
+            animation-duration: 8s;
+        }
+
+        @keyframes colorines {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: green;}
+        }
+
+        .movimiento {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+            background-color: red;
+            position: relative;
+            animation-name: movimiento;
+            animation-duration: 4s;
+        }
+
+        @keyframes movimiento {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+        }
+
+        .abajo {
+            width: 50px;
+            height: 50px;
+            margin-top: 10px;
+            background: pink;
+            position: relative;
+            animation-name: abajo;
+            animation-duration: 8s;  
+            
+        }
+
+        @keyframes abajo {
+            from {top: 0px;}
+            to {top: 200px; background-color: purple;}
+        }
+
+        .luna{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 15px 15px 0 0 #e1d5a3;
+        }
+
+        .triangulo{
+            border-top:30px solid transparent;
+            border-left: 75px solid #32557f;
+            border-bottom: 30px solid transparent;
+        }
+
+        .check{
+            width: 20px;
+            height: 30px;
+            border: 10px solid greenyellow;
+            border-left: 0;
+            border-top: 0;
+            transform: rotate(45deg);
+        }
+
+        td{
+            width: 100px;
+            height: 100px;
+        }
+
+        .titulo{
+            color:#32557f;
+            font-size:large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead class="titulo">Figuras geométricas con transformaciones</thead>
+        <tbody>
+            <tr>
+                <td><div class="cuadrado"></div></td> 
+                <td><div class="color"></div></td>
+                <td><div class="rectangulo"></div></td>
+            </tr>
+            <tr>
+                <td><div class="check"></div></td>
+                <td><div class="colores"></div></td>
+                <td><div class="luna"></div></td>
+            </tr>
+            <tr>
+                <td><div class="abajo"></div></td> 
+                <td><div class="triangulo"></div></td>
+                <td><div class="movimiento"></div></td>
+            </tr>
+            
+        </tbody>
+    </table>
+   
+</body>    
+</html>
